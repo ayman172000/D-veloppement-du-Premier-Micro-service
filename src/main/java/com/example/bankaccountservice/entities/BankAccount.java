@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import java.util.Date;
 
 @Entity
@@ -23,4 +24,6 @@ public class BankAccount {
     private String devise;
     //@Enumerated(EnumType.STRING)
     private AccountType accountType;
+    @ManyToOne
+    private Customer customer;
 }

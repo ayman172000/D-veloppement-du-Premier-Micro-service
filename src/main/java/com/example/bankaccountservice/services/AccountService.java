@@ -7,4 +7,6 @@ import com.example.bankaccountservice.enums.AccountType;
 
 public interface AccountService {
     public BankAccountResponseDTO addAccount(BankAccountRequestDTO requestDTO);
+
+    BankAccountResponseDTO updateAccount(String id, BankAccountRequestDTO requestDTO);
 }

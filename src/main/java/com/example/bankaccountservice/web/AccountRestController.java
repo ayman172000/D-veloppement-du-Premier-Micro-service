@@ -9,13 +9,10 @@ import com.example.bankaccountservice.services.AccountService;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
-import java.util.UUID;
-
 @RestController
 @AllArgsConstructor
 @RequestMapping("/api")
-public class AccountTestController {
+public class AccountRestController {
     private AccountService accountService;
     IAccountMapper mapper;
     @PostMapping("/bankAccounts")
